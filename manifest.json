@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Calendar Meeting Router",
+  "version": "1.0",
+  "description": "Intercepts Google Calendar new-event flow to route meeting types",
+  "content_scripts": [
+    {
+      "matches": ["https://calendar.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
